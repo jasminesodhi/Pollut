@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/total_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="148dp" />
+
+    <TextView
+        android:id="@+id/carbon_footprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total_distance"
+        android:layout_alignStart="@+id/total_distance"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_below="@+id/total_distance"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carbon_footprint"
+        android:layout_alignStart="@+id/carbon_footprint"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_below="@+id/carbon_footprint"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/total_trips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total_amount"
+        android:layout_alignStart="@+id/total_amount"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/total_amount"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/unpaid_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignLeft="@+id/total_trips"
+        android:layout_alignStart="@+id/total_trips"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/total_trips"
+        android:layout_marginTop="2dp" />
+</RelativeLayout>

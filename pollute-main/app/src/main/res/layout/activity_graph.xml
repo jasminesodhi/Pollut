@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/button_donate"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:text="@string/donate"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        fancy:fb_textColor="#FFF"
+        fancy:fb_defaultColor="@color/colorPrimary"
+        fancy:fb_radius="50dp"
+        android:layout_below="@+id/pie_chart"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/donate_text_view"
+        android:layout_below="@+id/button_donate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Hey, swipe right to check your due amount and proceed to donate!"/>
+
+</RelativeLayout>

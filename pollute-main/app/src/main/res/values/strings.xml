@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RHoK</string>
+
+    <string name="user_login">User Login</string>
+    <string name="uber_login">Uber Login</string>
+    <string name="login">Login</string>
+    <string name="donate">Donate for recent trips</string>
+</resources>
